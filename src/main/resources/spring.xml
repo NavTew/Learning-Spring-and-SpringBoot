@@ -5,7 +5,6 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="org.NavyaLearning.Dev" id="dev" autowire="byName">
-        <property name="com" ref="com"/>
     </bean>
 
 
@@ -17,7 +16,7 @@
         <constructor-arg name="brand" value="Macbook"/>
     </bean>
 
-    <bean class="org.NavyaLearning.Desktop" id="deskyy">
+    <bean class="org.NavyaLearning.Desktop" id="deskyy" primary="true">
         <constructor-arg name="brand" value="HP"/>
     </bean>
 
