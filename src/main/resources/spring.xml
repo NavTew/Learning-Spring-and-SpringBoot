@@ -4,7 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.NavyaLearning.Dev" id="dev" autowire="byName">
+    <bean class="org.NavyaLearning.Dev" id="dev" autowire="byType">
     </bean>
 
 
