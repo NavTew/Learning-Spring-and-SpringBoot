@@ -2,25 +2,15 @@ package org.NavyaLearning;
 
 public class Dev {
 
-    Laptop laptop;
+    Computer com;
 
-    private int age;
 
-    public void setLaptop(Laptop laptop){
-        this.laptop = laptop;
+    public void setCom(Computer com){ //the setter and getter is based on name !!!
+        this.com = com;
     }
 
-    public Laptop getLaptop(){
-        return laptop;
-    }
-
-    //publics were missing
-    public void setAge(int age){
-        this.age = age;
-    }
-
-    public int getAge(){
-        return age;
+    public Computer getCom(){
+        return com;
     }
 
     Dev(){
@@ -28,6 +18,6 @@ public class Dev {
     }
     public void building(){
         System.out.println("Dev is building");
-        laptop.compiling();
+        com.compiling();
     }
 }

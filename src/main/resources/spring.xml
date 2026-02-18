@@ -4,9 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.NavyaLearning.Dev" id="dev">
-        <property name="age" value="100"/>
-        <property name="laptop" ref="laptopId"/>
+    <bean class="org.NavyaLearning.Dev" id="dev" autowire="byName">
+        <property name="com" ref="com"/>
     </bean>
 
 
@@ -14,8 +13,12 @@
 
 
 
-    <bean class="org.NavyaLearning.Laptop" id="laptopId">
+    <bean class="org.NavyaLearning.Laptop" id="com">
         <constructor-arg name="brand" value="Macbook"/>
+    </bean>
+
+    <bean class="org.NavyaLearning.Desktop" id="deskyy">
+        <constructor-arg name="brand" value="HP"/>
     </bean>
 
 
